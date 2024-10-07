@@ -7,6 +7,6 @@
     - name: Check that a page returns a status 200
       uri:
         url: http://localhost
-        return_content: yes
+        return_content: true
       register: this
       failed_when: "'Dive Into Ansible' not in this.content"
